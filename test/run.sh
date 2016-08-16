@@ -15,7 +15,6 @@ cd "$TEST_DIR"
 BUNDLE_ID="$1"
 IAP_ID="$2"
 
-#PLUGIN_URL="git://github.com/j3k0/PhoneGap-InAppPurchase-iOS.git#unified"
 PLUGIN_URL="$ROOT_DIR"
 
 if [ "x$IAP_ID" = "x" ] || [ "x$1" = "x--help" ]; then

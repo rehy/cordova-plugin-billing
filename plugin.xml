@@ -25,16 +25,16 @@ SOFTWARE.
 
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
     xmlns:android="http://schemas.android.com/apk/res/android"
-    id="cc.fovea.cordova.purchase"
-    version="6.0.0">
+    id="cordova-plugin-billing"
+    version="1.0.0">
 
-    <name>Purchase</name>
+    <name>Billing</name>
 	<description>Cordova Purchase plugin for iOS (AppStore), Android (PlayStore) and Windows</description>
     <engines>
         <engine name="cordova" version=">=2.4.0" />
     </engines>
-    <repo>https://github.com/j3k0/cordova-plugin-purchase.git</repo>
-    <issue>https://github.com/j3k0/cordova-plugin-purchase/issues</issue>
+    <repo>https://github.com/rehy/cordova-plugin-billing.git</repo>
+    <issue>https://github.com/rehy/cordova-plugin-billing/issues</issue>
 
 	<license>MIT</license>
     <keywords>cordova,phonegap,purchase,storekit,ios,android,play,appstore,windows</keywords>
@@ -106,7 +106,7 @@ SOFTWARE.
 		<source-file src="src/android/com/smartmobilesoftware/util/Security.java" target-dir="src/com/smartmobilesoftware/util" />
 		<source-file src="src/android/com/smartmobilesoftware/util/SkuDetails.java" target-dir="src/com/smartmobilesoftware/util" />
     </platform>
-    
+
     <!-- windows -->
 	<platform name="windows">
 		<js-module src="www/store-windows.js" name="InAppPurchase">
@@ -115,7 +115,7 @@ SOFTWARE.
 		<js-module src="src/windows/InAppPurchaseProxy.js" name="InAppPurchaseProxy">
 			<merges target="" />
 		</js-module>
-		
+
 	</platform>
 <!--
 vim: ts=4:sw=4:et

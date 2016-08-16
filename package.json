@@ -1,19 +1,16 @@
 {
-  "name": "cc.fovea.cordova.purchase",
-  "version": "6.0.0",
+  "name": "cordova-plugin-billing",
+  "version": "1.0.0",
   "description": "Cordova Purchase plugin for iOS and Android (AppStore and PlayStore)",
   "cordova": {
-    "id": "cc.fovea.cordova.purchase",
+    "id": "cordova-plugin-billing",
     "platforms": [
       "android",
       "ios",
       "wp8"
     ]
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/j3k0/cordova-plugin-purchase.git"
-  },
+  "repository": "rehy/cordova-plugin-billing",
   "keywords": [
     "ecosystem:cordova",
     "cordova-android",
@@ -26,18 +23,18 @@
     "ios",
     "android",
     "play",
-    "appstore"
+    "appstore",
+    "billing"
   ],
   "scripts": {
+    "prepublish": "make build",
     "test": "make test-js",
     "coverage": "make test-js-coverage"
   },
-  "author": "Jean-Christophe Hoelt <hoelt@fovea.cc>",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/j3k0/PhoneGap-InAppPurchase-iOS/issues"
+  "author": {
+    "name": "Ratson"
   },
-  "homepage": "https://github.com/j3k0/PhoneGap-InAppPurchase-iOS",
+  "license": "MIT",
   "devDependencies": {
     "cordova": "^3.6.3-0.2.13",
     "eslint": "^0.9.1",

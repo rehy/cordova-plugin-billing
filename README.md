@@ -1,9 +1,5 @@
 # Cordova Purchase Plugin
 
-[![Build Status](https://travis-ci.org/j3k0/cordova-plugin-purchase.svg)](https://travis-ci.org/j3k0/cordova-plugin-purchase) [![Coverage Status](https://img.shields.io/coveralls/j3k0/cordova-plugin-purchase.svg)](https://coveralls.io/r/j3k0/cordova-plugin-purchase)
-
-**Author**: Jean-Christophe Hoelt - <hoelt@fovea.cc>
-
 ## Summary
 
 This plugin allows **In-App Purchases** to be made from **Cordova and PhoneGap** applications, on **Android**, **iOS** and **Windows** (Store/Phone)
@@ -12,33 +8,19 @@ It lets you handle all platforms with a single codebase.
 
 ## Installation
 
-### Install the plugin (cordova)
+### Install the plugin
 
 ```sh
-cordova plugin add cc.fovea.cordova.purchase
+cordova plugin add cordova-plugin-billing --save
 ```
 
 Need android too?
 
 ```sh
-cordova plugin add cc.fovea.cordova.purchase  --variable BILLING_KEY="<BILLING_KEY>"
+cordova plugin add cordova-plugin-billing --variable BILLING_KEY="<BILLING_KEY>" --save
 ```
 
 Check [here](https://github.com/j3k0/cordova-plugin-purchase/wiki/HOWTO#add-android-billing-key) for details on how to retrieve the billing key (or public key).
-
-### Install the plugin (PhoneGap Build)
-
-```xml
-<gap:plugin name="cc.fovea.cordova.purchase" source="npm" version="6.0.0" />
-```
-
-For Android:
-
-```xml
-<gap:plugin name="cc.fovea.cordova.purchase" source="npm" version="6.0.0">
-   <param name="BILLING_KEY" value="MIIB...."/>
-</gap:plugin>
-```
 
 ### Setup your Application
 
@@ -110,15 +92,6 @@ You're all good? Time to read some more documentation. Hooray!
  * Matt Kane (initial iOS code)
  * Mohammad Naghavi (original unification attempt)
  * Dave Alden [@dpa99c](https://github.com/dpa99c)(Apple-hosted IAPs for iOS)
-
-## Sponsors
-Big thanks to:
-
- * Fovea (http://www.fovea.cc) for sponsoring most of JC's work on the plugin
- * Maxwell C. Moore ([MCM Consulting, LLC](http://mcmconsulting.biz))
- * Justin Noel [@calendee](https://github.com/calendee)
- * Ionic Framework Team (http://ionicframework.com/)
- * [Those guys](https://www.indiegogo.com/projects/phonegap-cordova-in-app-purchase-ios-and-android#pledges)
 
 ## Licence
 
