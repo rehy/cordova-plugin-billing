@@ -1,4 +1,8 @@
-# Cordova Purchase Plugin
+# cordova-plugin-billing
+
+## Why fork
+
+This is a fork of [cordova-plugin-purchase](https://github.com/j3k0/cordova-plugin-purchase). The purpose of this fork is to publish the latest changes to `npm` more often and merge stalled pull requests when needed.
 
 ## Summary
 
