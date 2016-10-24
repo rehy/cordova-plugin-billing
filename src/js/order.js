@@ -8,7 +8,7 @@ var callbacks = {};
 var callbackId = 0;
 
 ///
-/// ## <a name="order"></a>*store.order(product)*
+/// ## <a name="order"></a>*store.order(product, additionalData)*
 ///
 /// Initiate the purchase of a product.
 ///
@@ -18,10 +18,15 @@ var callbackId = 0;
 ///  - the product `id`
 ///  - the product `alias`
 ///
+/// The `additionalData` argument can be either:
+///  - null
+///  - object with attribute `oldPurchasedSkus`, a string array with the old subscription to upgrade/downgrade on Android. See: [android developer](https://developer.android.com/google/play/billing/billing_reference.html#upgrade-getBuyIntentToReplaceSkus) for more info
+///  - object with attribute `developerPayload`, string representing the developer payload as described in [billing best practices](https://developer.android.com/google/play/billing/billing_best_practices.html)
+///
 /// See the ["Purchasing section"](#purchasing) to learn more about
 /// the purchase process.
 ///
-store.order = function(pid) {
+store.order = function(pid, additionalData) {
 
     var p = pid;
 
@@ -34,6 +39,9 @@ store.order = function(pid) {
                 valid: false
             });
         }
+    }
+    if (additionalData) {
+        p.additionalData = additionalData;
     }
 
     var localCallbackId = callbackId++;
