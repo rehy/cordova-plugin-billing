@@ -28,7 +28,7 @@
   ],
   "scripts": {
     "prepublish": "make build",
-    "version": "sync-package-version --cordova-plugin && git add plugin.xml",
+    "version": "sync-package-version --cordova-plugin",
     "test": "make test-js",
     "coverage": "make test-js-coverage"
   },
@@ -44,7 +44,7 @@
     "jshint": "^2.5.6",
     "mocha": "^1.21.4",
     "preprocessor": "^1.4.0",
-    "sync-package-version": "0.0.2",
+    "sync-package-version": "0.0.3",
     "uglify-js": "^2.7.3"
   }
 }
