@@ -4,6 +4,7 @@
 /test/tmp/
 /www/.store-android.js
 /www/.store-ios.js
+/www/*.js
 *~
 
 npm-debug.log
